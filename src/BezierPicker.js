@@ -163,7 +163,7 @@ class BezierPicker extends React.Component {
                     y
                 },
                 picked: "Self"
-            })
+            });
         }
     }
 

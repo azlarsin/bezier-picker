@@ -58,6 +58,7 @@ body > div{
   cursor: auto;
   padding: 10px;
   padding-bottom: 0;
+  width: fit-content;
 
   .options {
     @include flex;

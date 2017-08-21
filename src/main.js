@@ -23,9 +23,10 @@ const defaultProps = {
 let showData = (nowData) => {
 
     document.getElementById("data-board").innerHTML = 'now options:'
-        + `<span>picked: <i>${nowData.picked}</i></span>`
+        + `<span><i>${nowData.picked}</i></span>`
         + `<span>(<i>${nowData.x1}</i>, <i>${nowData.y1}</i>)</span>`
         + `<span>(<i>${nowData.x2}</i>, <i>${nowData.y2}</i>)</span>`
+        + `<div><code>transition-timing-function: cubic-bezier(${nowData.x1}, ${nowData.y1}, ${nowData.x2}, ${nowData.y2});</code></div>`
     ;
 };
 
