@@ -28,7 +28,7 @@ A simple bezier easing picker, you can use it to create a user-define [transitio
     export class YourComponent extends React.Component{
       render() {
         return (
-          <BezierPicker { ...defaultProps } onChange={ youOnChange }
+          <BezierPicker { ...defaultProps } onChange={ yourOnChange }
         )
       }
     }  
