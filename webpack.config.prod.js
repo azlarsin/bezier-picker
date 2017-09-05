@@ -1,16 +1,17 @@
 /**
- * Created by azlar on 16/04/2017.
+ * Created by azlar on 05/09/2017.
  */
 
 const path = require('path');
 
 module.exports = {
     entry: [
-        './demo/main.js'
+        './src/index.js'
     ],
     output: {
-        path: path.resolve(__dirname, "build"),
-        filename: 'main.js'
+        path: path.resolve(__dirname, "lib"),
+        filename: 'index.js',
+        libraryTarget: 'commonjs2'
     },
 
     module: {
@@ -20,5 +21,8 @@ module.exports = {
 
             { test: /\.scss$/, loaders: ["style-loader", "css-loader", "sass-loader"] }
         ],
+    },
+    externals: {
+        'react': 'commonjs react'
     }
 };

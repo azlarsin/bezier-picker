@@ -22611,7 +22611,7 @@ var BezierPicker = function (_React$Component) {
             this.setState({
                 dragging: true,
                 draggingType: type,
-                nowClientRect: this.refs.test.getBoundingClientRect()
+                nowClientRect: e.target.parentNode.parentNode.getBoundingClientRect()
             });
 
             window.addEventListener("mousemove", this.dragging);
@@ -22761,8 +22761,7 @@ var BezierPicker = function (_React$Component) {
                         "svg",
                         {
                             width: this.state.maxX,
-                            height: this.state.maxY,
-                            ref: "test"
+                            height: this.state.maxY
                         },
                         _react2.default.createElement("path", { d: grid, strokeWidth: "1px", stroke: "#eee" }),
                         _react2.default.createElement("path", { d: path, strokeWidth: "1px", stroke: "#000", strokeLinecap: "round", fill: "none" }),
@@ -23452,4 +23451,3 @@ module.exports = function (css) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.js.map

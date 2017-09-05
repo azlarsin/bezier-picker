@@ -6,5 +6,6 @@
 /demos/
 /test/
 
-/webpack.*
 
+src
+css

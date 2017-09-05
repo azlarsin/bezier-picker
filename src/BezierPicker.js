@@ -143,7 +143,7 @@ class BezierPicker extends React.Component {
         this.setState({
             dragging: true,
             draggingType: type,
-            nowClientRect: this.refs.test.getBoundingClientRect()
+            nowClientRect: e.target.parentNode.parentNode.getBoundingClientRect()
         });
 
         window.addEventListener("mousemove", this.dragging);
@@ -276,7 +276,6 @@ class BezierPicker extends React.Component {
                     <svg
                         width={ this.state.maxX }
                         height={ this.state.maxY }
-                        ref="test"
                     >
                         <path d={ grid } strokeWidth={"1px"} stroke="#eee" />
                         <path d={ path } strokeWidth={"1px"} stroke="#000" strokeLinecap={"round"} fill="none" />

@@ -5,7 +5,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-import BezierPicker from './BezierPicker';
+import BezierPicker from '../src/BezierPicker';
 
 require("../css/main.scss");
 
