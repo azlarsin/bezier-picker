@@ -13,7 +13,7 @@ A simple bezier easing picker, you can use it to create a user-define [transitio
 
     ```javascript
     import React from 'react';
-    import BezierPicker from './BezierPicker';
+    import BezierPicker from 'bezier-picker';
     
     const defaultProps = {
       max: 300,
