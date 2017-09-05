@@ -24,15 +24,16 @@ A simple bezier easing picker, you can use it to create a user-define [transitio
           y2: .15,
       }
     };
-        
+    
     export class YourComponent extends React.Component{
       render() {
         return (
-          <BezierPicker { ...defaultProps } onChange={ yourOnChange }
+          <BezierPicker { ...defaultProps } onChange={ yourOnChange } />
         )
       }
     }  
     ```
+
 ## Api
 1. `max`: will be used as a svg-drag-zone size(width == height).
 
