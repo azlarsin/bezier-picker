@@ -49,7 +49,7 @@ A simple bezier easing picker, you can use it to create a user-define [transitio
 3. `onChange`: fired when user chose an radio or a dragend.
 
 ## demo
-[https://blog.azlar.cc/demos/bezier_picker/](https://blog.azlar.cc/demos/bezier_picker/).
+[https://blog.azlar.cc/demos/bezier-picker/](https://blog.azlar.cc/demos/bezier-picker/).
 
 or
 
