@@ -13,7 +13,7 @@ A simple bezier easing picker, you can use it to create a user-define [transitio
 
     ```javascript
     import React from 'react';
-    import BezierPicker from './BezierPicker';
+    import BezierPicker from 'bezier-picker';
     
     const defaultProps = {
       max: 300,
@@ -24,11 +24,11 @@ A simple bezier easing picker, you can use it to create a user-define [transitio
           y2: .15,
       }
     };
-        
+
     export class YourComponent extends React.Component{
       render() {
         return (
-          <BezierPicker { ...defaultProps } onChange={ youOnChange } />
+          <BezierPicker { ...defaultProps } onChange={ yourOnChange } />
         )
       }
     }  
@@ -48,7 +48,7 @@ A simple bezier easing picker, you can use it to create a user-define [transitio
     ```
 3. `onChange`: fired when user chose an radio or a dragend.
 
-## demo
+## Demo
 [https://blog.azlar.cc/demos/bezier-picker/](https://blog.azlar.cc/demos/bezier-picker/).
 
 or
